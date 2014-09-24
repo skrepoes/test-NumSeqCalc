@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Numeric Sequence Calculator</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex,nofollow" />
+    <meta name="GOOGLEBOT" content="NOINDEX, NOFOLLOW" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">  
+      
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body role="document">
+
+	<div class="container" role="main">
+	
+	
+		<div class="row">
+			<div class="col-md-9">
+            	<h1> Numeric Sequence Calculator </h1>
+			</div>
+            <div class="col-md-3 info-button">
+            	<button class="btn btn-primary" data-toggle="modal" data-target=".instructions-modal"><span class="glyphicon glyphicon-info-sign"></span> Instructions </button>
+			</div>
+		</div>
+        
+        <div class="row calc-section" id="calculator">
+			<div class="col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                      <div class="col-lg-12">
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="calcData">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" id="calcSubmit">Calculate</button>
+                          </span>
+    					</div>
+                      </div>
+                  </div>
+                </div>
+                <p id="calcError"></p>
+			</div>
+            <div class="col-md-8"></div>
+		</div>
+        
+        <div class="row calc-section" id="results">
+			<div class="col-md-12">
+            
+                <div class="well well-lg">
+                   <h2>Numeric Sequence</h2>
+                   <p id="numsSeq"> </p>
+                </div>
+                
+                <div class="well well-lg">
+                   <h2>Odd Number Sequence</h2>
+                   <p id="numsOdds"> </p>
+                </div>
+                
+                <div class="well well-lg">
+                   <h2>Even Number Sequence</h2>
+                   <p id="numsEvens"> </p>
+                </div>
+                
+                <div class="well well-lg">
+                   <h2>Multiples Substitution Sequence</h2>
+                   <p id="numsMultis"> </p>
+                   <div class="well well-sm key">
+                   		<h4>Multiples Key</h4>
+                   		<p>Z = multiple of 3 & 5, E = multiple of 5, C = multiple of 3 </p>
+                   </div>     
+                </div>
+                
+                <div class="well well-lg">
+                   <h2>Fibonacci Number Sequence</h2>
+                   <p id="numsFibo"> </p>
+                </div>                                                                
+            
+			</div>
+		</div>
+        
+	</div>   
+    
+    <div class="modal fade instructions-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Instructions</h4>
+              </div>
+              <div class="modal-body">
+                <p>Enter a positive number into the calculator field and press <strong>Calculate</strong> to retrieve the numeric sequences.</p>
+                
+                <hr>
+                <p>The following sequences will be calculated returned:</p>
+                
+                <dl>
+                    <dt>Numeric Sequence</dt>
+                    <dd>All numbers up to and including your number. </dd>
+                    
+                    <dt>Odd Number Sequence</dt>
+                    <dd>All odd numbers up to and including your number. </dd>
+                    
+                    <dt>Even Number Sequence</dt>
+                    <dd>All even numbers up to and including your number. </dd>
+                    
+                    <dt>Multiples Substitution Sequence</dt>
+                    <dd>All numbers up to and including your number. With the following substitutions:
+                        <ul> 
+                            <li>C if your number is a multiple of 3.</li>
+                            <li>E if your number is a multiple of 5.</li>
+                            <li>Z if your number is a multiple of both 3 and 5.</li>
+                        </ul>
+                    </dd>
+                    
+                    <dt>Fibonacci Number Sequence</dt>
+                    <dd>All fibonacci numbers up to and including your number.</dd>  
+                                           
+                </dl>
+                    
+              </div>
+        </div>
+      </div>
+    </div>     
+
+    <script type="text/javascript" src="js/jquery1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/modernizr-2.5.3.min.js"></script>
+	<script type="text/javascript" src="js/placeholders.min.js"></script>
+    <script type="text/javascript" src="js/calcProcess.js"></script>
+
+</body>
+</html>

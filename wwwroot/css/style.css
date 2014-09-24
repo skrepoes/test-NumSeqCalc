@@ -1,0 +1,46 @@
+html,
+body,
+ol {
+  margin: 0;
+  padding: 0;
+  padding: 0; }
+
+h1 {
+  color: #2d6ca2; }
+
+h2, h3, h4, h5, h6 {
+  color: #333333; }
+
+h2 {
+  font-size: 24px; }
+
+.panel {
+  margin-bottom: 0; }
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: #333333; }
+
+.info-button {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+.info-button button {
+  float: right; }
+
+.calc-section {
+  margin-top: 20px; }
+
+#calcError {
+  color: #cc0000;
+  text-align: center;
+  margin: 10px 0; }
+
+.key {
+  text-align: center; }
+
+#results {
+  display: none; }
+
+dd {
+  margin-bottom: 1.0em; }

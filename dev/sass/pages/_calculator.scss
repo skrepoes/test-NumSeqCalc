@@ -1,0 +1,28 @@
+.info-button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}  
+
+.info-button button {
+    float: right;
+} 
+
+.calc-section { 
+    margin-top: 20px;
+}
+
+#calcError {
+   color: $error-color; 
+   text-align: center; 
+   margin: 10px 0;
+}
+
+.key { text-align: center; }
+
+#results {
+    display: none;
+}    
+
+dd {
+    margin-bottom: 1.0em;
+}
