@@ -17,7 +17,17 @@ Contains the web application and web resources.
 
 Installation
 ------------
-Clone/Download the entire repository to your local file system in the directory **C:\NumSeqCalc**
+Download the repository ZIP to your local file system.
+Extract the contents in test-NumSeqCalc-master directory into the directory **C:\NumSeqCalc** so that you directory structure looks like this:
+```sh
+C:\NumSeqCalc>dir /B
+.gitattributes
+dev
+py
+readme.md
+tests
+wwwroot
+```
 
 Run Manually
 ------------
@@ -38,13 +48,13 @@ c)	selenium web driver in the python environment
 
 https://www.mozilla.org/
 
-** B. Install Python (if required) **
+**B. Install Python (if required) **
 
 For python I have used Active Python (http://www.activestate.com/activepython)
 Download and install this in the default directory.
 Add the python install directory to you system path, to allow you to call python.exe from any directory. 
 
-** C. Install selenium web driver for python **
+**C. Install selenium web driver for python **
 
 Extract Selenium for python from the repositories location:
 C:\NumSeqCalc\py\bin\selenium-2.43.0.tar.gz
