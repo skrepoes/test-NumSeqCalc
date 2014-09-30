@@ -7,7 +7,7 @@ $(document).ready(function(){
         	event.preventDefault();
         	$("#calcSubmit").click();
 		}
-        return /\d/.test(String.fromCharCode(event.keyCode));
+        return /\d/.test(String.fromCharCode(event.keyCode ? event.keyCode : event.which));
     });
 	
 	$("#calcSubmit").click(function(event){
