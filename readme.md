@@ -18,7 +18,7 @@ Contains the web application and web resources.
 Installation
 ------------
 Download the repository ZIP to your local file system.
-Extract the contents in test-NumSeqCalc-master directory into the directory **C:\NumSeqCalc** so that you directory structure looks like this:
+Extract the contents in the **test-NumSeqCalc-master** directory into **C:\NumSeqCalc** so that your directory structure looks like this:
 ```sh
 C:\NumSeqCalc>dir /B
 .gitattributes
